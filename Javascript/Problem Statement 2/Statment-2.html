@@ -1,0 +1,115 @@
+<p>=========================================================</p>
+<p> Create JS Object using Object Constuctor</p>
+<p>=========================================================</p>
+<p> Customer Details</p>
+<p>=========================================================</p>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<p id="p9"></p>
+<p id="p10"></p>
+<p id="p11"></p>
+<script>
+
+// Constructor function for Person objects
+function Person(id, first, last, email, mobile, gender, dob, add, city, state, country) {
+  this.id = id;
+  this.firstName = first;
+  this.lastName = last;
+  this.email = email;
+  this.mobile = mobile;
+  this.gender = gender;
+  this.dob = dob;
+  this.add = add;
+  this.city = city;
+  this.state = state;
+  this.country = country; 
+  this.i= function() {
+    return this.id
+  };
+ this.fname= function() {
+    return this.firstName 
+  };
+  this.lname= function() {
+    return this.lastName 
+  };
+  this.em= function() {
+    return this.email 
+  };
+  this.mob= function() {
+    return this.mobile
+  };
+  this.gen= function() {
+    return this.gender 
+  };
+  this.dat= function() {
+    return this.dob
+  };
+  this.aadd= function() {
+    return this.add
+  };
+  this.cit= function() {
+    return this.city 
+  };
+  this.st= function() {
+    return this.state 
+  };
+  this.cu= function() {
+    return this.country
+  };
+}
+
+// Create a Person object
+const myCust = new Person("102", "Pradeep", "Chinchole", "pradeep.chinchole@mphasis.com", 9158652627, "male", "7/31/1989", "Warje MAlwadi", "Pune", "Maharastra", "India");
+
+
+document.getElementById("p1").innerHTML =
+"Customer Id &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.i(); 
+document.getElementById("p2").innerHTML =
+"Customer First name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.fname(); 
+document.getElementById("p3").innerHTML =
+"Customer Last name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.lname(); 
+document.getElementById("p4").innerHTML =
+"Customer Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.em();
+document.getElementById("p5").innerHTML =
+"Customer Mobile &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.mob();
+document.getElementById("p6").innerHTML =
+"Customer Gender &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.gen();
+document.getElementById("p7").innerHTML =
+"Customer Date Of Birth &nbsp&nbsp&nbsp:" + myCust.dat();
+document.getElementById("p8").innerHTML =
+"Customer Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.aadd();
+document.getElementById("p9").innerHTML =
+"Customer City &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.cit();
+document.getElementById("p10").innerHTML =
+"Customer State &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.st();
+document.getElementById("p11").innerHTML =
+"Customer Country &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" + myCust.cu();
+console.log("=========================================================");
+console.log("Create JS Object using Object Constuctor");
+console.log("=========================================================");
+console.log("Customer Details");
+console.log("=========================================================");
+
+console.log("Customer Id             :" + myCust.i());
+console.log("Customer First name     :" + myCust.fname());
+console.log("Customer Last name      :" + myCust.lname());
+console.log("Customer Email          :" + myCust.em());
+console.log("Customer Mobile         :" + myCust.mob());
+console.log("Customer Gender         :" + myCust.gen());
+console.log("Customer Date Of Birth  :" + myCust.dat());
+console.log("Customer Address        :" + myCust.aadd());
+console.log("Customer City           :" + myCust.cit());
+console.log("Customer State          :" + myCust.st());
+console.log("Customer Country        :" + myCust.cu());
+console.log("=========================================================");
+</script>
+<p>=========================================================</p>
+</body>
+</html>

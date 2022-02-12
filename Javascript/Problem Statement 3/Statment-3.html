@@ -1,0 +1,36 @@
+<html>
+<p>=========================================================</p>
+    <p>creating js object using object prototype</p>
+        <p>=========================================================</p>
+    <p>Product Details</p>
+<p>=========================================================</p>
+<script>
+const product = {
+    
+    showdetails: function() {
+      
+      document.write(`Product id &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ${this.productid} <br>Product name   &nbsp&nbsp: ${this.name} <br> Product price    &nbsp&nbsp&nbsp: ${this.price}`);
+      
+        console.log("=========================================================");
+     console.log("creating js object using object prototype");
+       console.log("=========================================================");
+      console.log("Product Details");
+      console.log("=========================================================");
+
+      console.log(`Product id    : ${this.productid}. `);
+      console.log(`Product name  : ${this.name}. `);
+      console.log(`Product price : ${this.price}. `);
+      console.log("=========================================================");
+    }
+  };
+  
+  const me = Object.create(product)
+  me.productid = '101'; 
+  me.name='Laptop'
+  me.price='4500'
+  
+  me.showdetails();
+  
+  </script>
+<p>=========================================================</p>
+  </html>

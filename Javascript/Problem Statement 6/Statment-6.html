@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<p>=========================================================</p>
+<p> Before Deleting</p>
+<p>=========================================================</p>
+<p id="p1"></p>
+<p>=========================================================</p>
+<p>=========================================================</p>
+<p> After Deleting</p>
+<p>=========================================================</p>
+<p id="demo"></p>
+<p>=========================================================</p>
+
+<script>
+var person = {
+  rollno: "101",
+  name: "Mahesh Patil",
+  marks: 45.88,
+  gender: "Male"
+};
+document.getElementById("p1").innerHTML =
+"{" + "rollno :"  + person.rollno + "," + "name :" + person.name + "," + "marks:" +  person.marks + "," + "gender :" + person.gender + "}" ;
+console.log("=========================================================");
+console.log("Before Deleting");
+console.log("{" + "rollno :"  + person.rollno + "," + "name :" + person.name + "," + "marks:" +  person.marks + "," + "gender :" + person.gender + "}" );
+delete person.rollno;
+document.getElementById("demo").innerHTML =
+"{" + "rollno :"  + person.rollno + "," + "name :" + person.name + "," + "marks:" +  person.marks + "," + "gender :" + person.gender + "}" ;
+console.log("=========================================================");
+console.log("After Deleting");
+console.log("{" + "rollno :"  + person.rollno + "," + "name :" + person.name + "," + "marks:" +  person.marks + "," + "gender :" + person.gender + "}" );
+
+
+</script>
+
+</body>
+</html>

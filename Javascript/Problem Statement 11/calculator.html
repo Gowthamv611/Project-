@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Mphasisc Calculator Page</title>
+<script>
+
+//Write JS Code here
+var inputIdFirst = "a",inputIdSecond = "b",outputId = "result";
+    var getInputs = function(id) {
+      return parseInt(document.getElementById(id).value);
+    }
+    var showOutput = function(outputValue, outputIdAsArg) {
+      
+      document.getElementById(outputId).innerHTML = outputValue;
+    }
+    var manuplateAs = function(operationName, a, b) {
+      if(operationName == 'addition')
+        return a + b;
+      else if(operationName == 'substraction')
+        return a - b;
+      else if(operationName == 'multiplication')
+        return a * b;
+      else if(operationName == 'division')
+        return a / b;
+      
+    } 
+    var operation = function(operationName){
+      x = getInputs(inputIdFirst);
+      y = getInputs(inputIdSecond);
+      output = manuplateAs(operationName, x, y);
+      showOutput(output);
+      console.log(x + " " + operationName + " " + y + " = " + output)
+      
+      console.log(this)
+    };
+
+
+</script>
+</head> 
+<body>
+<div>
+<form>
+<table border="5">
+<caption><h3>Calculator Application</h3></caption>
+<tr>
+<td>Number 1</td>
+<td><input type="text" id="a" name="a"/> </td>
+</tr>
+
+<tr>
+<td>Number 2</td>
+<td><input type="text" id="b" name="b"/> </td>
+</tr>
+
+<tr>
+<td>Result</td>
+<td><textarea id="result" rows="5" cols="25"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<input type="button" value="Addition" onclick="operation('addition')">
+<input type="button" value="Subtracttion" onclick="operation('substraction')">
+<input type="button" value="Multiplication" onclick="operation('multiplication')">
+<input type="button" value="Division" onclick="operation('division')">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

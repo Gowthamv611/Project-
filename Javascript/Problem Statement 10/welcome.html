@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Return first and last name from a form</title>
+
+<script>
+function greet() {
+      var user = document.getElementById("firstname").value;
+      var pass = document.getElementById("lastname").value;
+      text = "Welcome-" + user + "" + pass + ""
+      console.log(text)
+      alert(text)
+    }
+//write a JS code here
+</script>
+</head>
+<body>
+<div align="left">
+    <h3>Welcome Form</h3>
+<form id="form1" onsubmit="showDetails()">
+First name: <input type="text" id="firstname" name="firstname" value="Pradeep" ><br>
+Last name: <input type="text" id="lastname" name="lastname" value="Chinchole" ><br>
+<br/>
+<input type="submit" onclick="greet()" value="Greet">
+</form>
+</div>
+</body>
+</html>

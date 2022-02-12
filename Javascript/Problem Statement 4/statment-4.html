@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>=========================================================</p>
+<p> Creating an Object Parsing JSON</p>
+<p>=========================================================</p>
+<p> Account Details</p>
+<p>=========================================================</p>
+
+<p id="demo"></p>
+<script>
+const showdetails = '{"accountno":"1023", "name":"Pradeep Chinchole", "balance":"45888.99","pan":"AMXPC8945D"}';
+const myObj = JSON.parse(showdetails);
+document.write("Accountno &nbsp&nbsp&nbsp:" +myObj.accountno);
+           document.write("<br>");
+document.write("Name  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" +myObj.name);           
+           document.write("<br>");
+document.write("Balance  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" +myObj.balance);
+           document.write("<br>");
+document.write("Pan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:" +myObj.pan);
+           document.write("<br>");
+console.log("=========================================================");
+console.log("Creating an Object Parsing JSON");
+console.log("=========================================================");
+console.log("Account Details");
+console.log("=========================================================");
+console.log("Accountno :" +myObj.accountno);
+console.log("Name      :" +myObj.name);
+console.log("Balance   :" +myObj.balance);
+console.log("Pan       :" +myObj.pan);
+console.log("=========================================================");
+</script>
+<p>=========================================================</p>
+</body>
+</html>

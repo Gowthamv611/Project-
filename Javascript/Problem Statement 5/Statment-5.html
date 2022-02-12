@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>=========================================================</p>
+<p> Defining Class in JS</p>
+<p>=========================================================</p>
+<p> Book Details</p>
+<p>=========================================================</p>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<script>
+class Book {
+  constructor(sid, name, author, price) {
+    this.sid = sid;
+    this.name = name;
+    this.author = author;
+    this.price = price;
+  }
+}
+const myBook = new Book("13455", "Mrityunjay", "Shivaji Sawant", 4350.55);
+document.getElementById("p1").innerHTML =
+"Book Id &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:"+myBook.sid;
+document.getElementById("p2").innerHTML =
+"Book Name &nbsp&nbsp&nbsp&nbsp&nbsp:"+myBook.name;
+document.getElementById("p3").innerHTML =
+"Book Author &nbsp&nbsp&nbsp&nbsp:"+myBook.author;
+document.getElementById("p4").innerHTML =
+"Book Price &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:"+myBook.price;
+console.log("=========================================================");
+console.log("Defining Class in JS");
+console.log("=========================================================");
+console.log("Book Details");
+console.log("=========================================================");
+console.log("Book Id       :"+myBook.sid);
+console.log("Book Name     :"+myBook.name);
+console.log("Book Author   :"+myBook.author);
+console.log("Book Price    :"+myBook.price);
+console.log("=========================================================");
+
+</script>
+<p>=========================================================</p>
+</body>
+</html>
